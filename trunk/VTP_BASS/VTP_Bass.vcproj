@@ -42,7 +42,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="./HanFont;./han;;../../../Vendor/DirectX9.0/include"
+				AdditionalIncludeDirectories="./HanFont;./han;;../DirectX9.0/include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="0"
@@ -67,10 +67,10 @@
 				Name="VCLinkerTool"
 				AdditionalOptions="/MACHINE:I386 /IGNORE:4089 /IGNORE:4098"
 				AdditionalDependencies="strmbasd.lib dxerr9.lib dxguid.lib d3dx9d.lib d3dx9.lib d3d9.lib winmm.lib comctl32.lib strmiids.lib bass.lib"
-				OutputFile="../bin/VTP2005/VTP2005.exe"
+				OutputFile="../bin/VTP2005.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="../../../Vendor/DirectShow/lib;../../../Vendor/DirectX9.0/lib"
+				AdditionalLibraryDirectories="../DirectShow/lib;../DirectX9.0/lib"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/CustomUI.pdb"
 				SubSystem="2"
@@ -193,26 +193,6 @@
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 			>
-			<File
-				RelativePath="CustomUI.manifest"
-				>
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					ExcludedFromBuild="true"
-					>
-					<Tool
-						Name="VCCustomBuildTool"
-					/>
-				</FileConfiguration>
-			</File>
 			<File
 				RelativePath="CustomUI.rc"
 				>
