@@ -2,7 +2,7 @@
 #include "resource.h"
 #include "curtain.h"
 #include <stdio.h>
-#include <atlbase.h>
+//#include <atlbase.h>
 #include <dshow.h>
 #include "han/D3DHangul.h"
 #include "han/CD3DSprite.h"
