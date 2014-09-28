@@ -306,13 +306,13 @@ BOOL g_bSpec_hide=false;
 void UpdateSpectrum()
 {
 	HDC dc;
-	int x,y,y1;
+	int x=0,y=0,y1=0;
 	float fft[1024]; // get the FFT data
 	BASS_ChannelGetData(chan,fft,BASS_DATA_FFT2048);
 
 	if (!specmode) { // "normal" FFT
 		memset(specbuf,0,SPECWIDTH*SPECHEIGHT);
-		
+
 		for (x=0;x<SPECWIDTH/2;x++) {
 #if 1
 			y=sqrt(fft[x+1])*3*SPECHEIGHT-4; // scale it (sqrt to make low values more visible)
@@ -320,6 +320,13 @@ void UpdateSpectrum()
 			y=fft[x+1]*10*SPECHEIGHT; // scale it (linearly)
 #endif
 			if (y>SPECHEIGHT) y=SPECHEIGHT; // cap it
+
+			if(y < 0)
+				y = 0;
+
+			if(y1 < 0)
+				y1 = 0;
+
 			if (x && (y1=(y+y1)/2)) // interpolate from previous to make the display smoother
 				while (--y1>=0) specbuf[y1*SPECWIDTH+x*2-1]=y1+1;
 			y1=y;
@@ -330,7 +337,7 @@ void UpdateSpectrum()
 	} else if (specmode==1) { // logarithmic, acumulate & average bins
 		int b0=0;
 		memset(specbuf,0,SPECWIDTH*SPECHEIGHT);
-		
+
 #define BANDS 29
 		for (x=0;x<BANDS;x++) {
 			float sum=0;
