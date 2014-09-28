@@ -12,7 +12,9 @@
 
 #include "dxstdafx.h"
 #include "vtp2005.h"
-
+ #include <atlbase.h> 
+#include <atlconv.h>
+#include "strmif.h"
 
 //--------------------------------------------------------------------------------------
 // Entry point to the program. Initializes everything and goes into a message processing 
@@ -1008,8 +1010,8 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bo
 {
 
 	g_Hwnd=hWnd;
-	float x,y;
-	if(uMsg==WM_LBUTTONDOWN)
+	float x = 0,y = 0;
+	/*if(uMsg==WM_LBUTTONDOWN)
 	{		   
 		if(x>=14&& x<=344 &&(y>=5&&y<=29))			
 		{
@@ -1017,7 +1019,7 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, bo
 		}
 		       
 		g_click=TRUE;
-	}
+	}*/
 	
 	if(uMsg==WM_LBUTTONUP)		   
 	{	
