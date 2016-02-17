@@ -70,7 +70,7 @@
     </ClCompile>
     <Link>
       <AdditionalOptions>/MACHINE:I386 /IGNORE:4089 /IGNORE:4098 /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>strmbasd.lib;dxerr9.lib;dxguid.lib;d3dx9d.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;strmiids.lib;bass.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Strmiids.lib;strmbasd.lib;dxerr9.lib;dxguid.lib;d3dx9d.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;strmiids.lib;bass.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>../bin/VisualTextPlayer3D_2005.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>../DirectShow/lib;../DirectX9.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -92,7 +92,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Common;%(AdditionalIncludeDirectories);./HanFont;./han;../DirectX9.0/include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling />
@@ -104,9 +104,9 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>D:\pouii\Extras\DirectShow\Samples\C++\DirectShow\BaseClasses\Debug\strmbasd.lib;dxerr9.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)CustomUI.exe</OutputFile>
+      <AdditionalOptions>/IGNORE:4089 /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>strmbasd.lib;dxerr9.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;bass.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../bin/VisualTextPlayer3D_2005.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -114,7 +114,15 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>./;../DirectShow/lib;../DirectX9.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>2.0</ShaderModel>
+      <AdditionalOptions>/Gec %(AdditionalOptions)</AdditionalOptions>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ResourceCompile Include="CustomUI.rc" />
