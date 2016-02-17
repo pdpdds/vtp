@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{96b745f2-0323-4605-9721-fcec078ebe93}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{77b39074-68f0-451a-b80e-a5b0f1a41257}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CustomUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bass.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\CD3DSprite.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CD3DSprite2.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="curtain.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\D3DHangul.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\D3DHangulConverter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\D3DHangulFont.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\D3DVertex.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\DebugOut.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\dxstdafx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\dxut.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\dxutenum.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\dxutgui.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DXUTMesh.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\dxutmisc.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\dxutsettingsdlg.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\FastLib.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\FileEx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\KogGen.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\MemoryLeak.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\SafeCast.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\SpriteEx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\TEXTURETOOL.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="han\Todo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="vtp2005.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="YUKINO.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="han\CD3DSprite.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CD3DSprite2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="curtain.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="han\D3DHangul.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="han\D3DHangulConverter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="han\D3DHangulFont.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\dxstdafx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\dxut.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\dxutenum.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\dxutgui.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DXUTMesh.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\dxutmisc.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\dxutsettingsdlg.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="han\FileEx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="han\KogGen.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="han\SpriteEx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="CustomUI.fx" />
+  </ItemGroup>
+</Project>
