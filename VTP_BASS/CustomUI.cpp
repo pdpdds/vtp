@@ -2640,10 +2640,11 @@ void Wait_Message()
 
 
 void NEXT_PLAY_MP3(DXUTListBoxItem *pItem,int chg){
-                    
-	
-	g_Music_Start++;					
-	g_pMediaControl2->Stop();
+                    	
+	g_Music_Start++;	
+	if(g_pMediaControl2)
+		g_pMediaControl2->Stop();
+
 	b_sliderbar_check = false;
 	BASS_MusicFree(chan);							
 	BASS_StreamFree(chan);	
