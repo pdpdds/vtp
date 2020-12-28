@@ -44,7 +44,7 @@
     <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Bin</OutDir>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
     <IntDir>Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
