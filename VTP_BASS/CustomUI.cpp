@@ -70,7 +70,7 @@ INT WINAPI WinMain( HINSTANCE, HINSTANCE, LPSTR file_str, int )
     // allow you to set several options which control the behavior of the framework.
     DXUTInit( true, false, false ); // Parse the command line, handle the default hotkeys, and show msgboxes
  
-    DXUTCreateWindow( L"Visual Text Player 2005" );
+    DXUTCreateWindow( L"Visual Text Player" );
     DXUTCreateDevice( D3DADAPTER_DEFAULT, true, 358, g_height+g_sum, IsDeviceAcceptable, ModifyDeviceSettings );
 	GraphInit();
     // Pass control to the sample framework for handling the message pump and 
